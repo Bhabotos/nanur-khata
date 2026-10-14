@@ -85,3 +85,45 @@ Insert screenshots showing:
 4. `git diff` and `git diff --staged`.
 5. The first commit and clean working tree.
 6. `git reset bazar-list.txt` and the file remaining on disk.
+## Chapter 2: The Secret Spice
+
+### Task A: Creating Secret and Temporary Files
+
+I created `secret-masala.txt`, two temporary files (`recipe.tmp` and `notes.tmp`), and a `draft/` directory to test Git ignore rules.
+
+### Task B: Configuring and Verifying `.gitignore`
+
+I created a `.gitignore` file with these rules:
+
+```gitignore
+secret-masala.txt
+*.tmp
+draft/
+```
+
+I verified the rules using `git status --short` and `git status --ignored`. The secret and temporary files were ignored and did not appear in the normal untracked list.
+
+I committed only `.gitignore`, keeping `secret-masala.txt` out of Git tracking.
+
+Commands used:
+
+```powershell
+Get-Content .gitignore
+git status --short
+git status --ignored
+git add .gitignore
+git commit -m "Ignore secret and temporary recipe files"
+git log --oneline
+```
+
+### What I Learned
+
+`.gitignore` prevents matching untracked files and directories from appearing in Git's normal status list. It helps protect secret and temporary files from accidental inclusion.
+
+### Evidence
+
+Insert screenshots showing:
+1. The `.gitignore` contents.
+2. `git status --short`.
+3. `git status --ignored`.
+4. The successful `.gitignore` commit.
