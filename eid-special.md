@@ -11,3 +11,9 @@
 2. Add gur and grated coconut in layers.
 3. Steam until cooked.
 4. Serve during Eid.
+
+## Serving Tips
+
+- Serve the pitha warm.
+- Garnish with extra grated coconut.
+- Share with family during Eid.
